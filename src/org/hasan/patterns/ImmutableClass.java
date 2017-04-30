@@ -10,6 +10,10 @@ public final class ImmutableClass {
     this.privateField = field;
   }
 
+  void ImmutableClass() {
+
+  }
+
   public String getPrivateField() {
     return privateField;
   }
