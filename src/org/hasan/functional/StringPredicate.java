@@ -1,4 +1,4 @@
-package org.hasan.filter.org.hasan.functional;
+package org.hasan.functional;
 
 /**
  * Created by habdelhalim on 4/29/17.

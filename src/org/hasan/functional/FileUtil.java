@@ -1,4 +1,4 @@
-package org.hasan.filter.org.hasan.functional;
+package org.hasan.functional;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
