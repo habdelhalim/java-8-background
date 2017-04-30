@@ -10,10 +10,11 @@ public interface FirstInterface {
     static void printMe() {
       System.out.println("print inner interface method");
     }
-  }
 
-  default void myMethod() {
-    System.out.println(FirstInterface.class.getCanonicalName());
+    default void myMethod() {
+      System.out.println(this.getClass().getCanonicalName());
+      System.out.println(FirstInterface.class.getCanonicalName());
+    }
   }
 
   static void printMe() {
@@ -26,5 +27,9 @@ public interface FirstInterface {
     System.out.println(FirstInterface.field);
 
     FirstInterface.InnerInterface.printMe();
+    InnerInterface innerInterface = new InnerInterface() {
+
+    };
+    innerInterface.myMethod();
   }
 }
